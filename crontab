@@ -1,2 +1,2 @@
 #this is example
-* 16 * * * cd /home/shell/rumpelsztyk/ircbot && /home/shell/rumpelsztyk/ircbot/ircbot_venv/bin/python3 /home/shell/rumpelsztyk/ircbot/TLEdownloader.py > cron_errorlog.txt 2>&1
+30 16 * * * cd /home/shell/rumpelsztyk/ircbot && /home/shell/rumpelsztyk/ircbot/ircbot_venv/bin/python3 /home/shell/rumpelsztyk/ircbot/TLEdownloader.py > cron_errorlog.txt 2>&1
