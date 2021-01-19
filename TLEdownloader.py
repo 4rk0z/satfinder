@@ -1,3 +1,7 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# © arkoz 2021
+
 import os
 import sys
 import requests
