@@ -14,7 +14,6 @@ import maidenhead
 from math import degrees
 import re
 import shlex
-import argparse
 
 
 VERBOSE = True
