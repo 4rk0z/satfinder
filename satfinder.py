@@ -131,7 +131,7 @@ def calculate(satellite, QTH_locator, geocentric_height_above_sea_level, min_ele
     observer.lon = str(lon)
     observer.elevation = geocentric_height_above_sea_level
     observer.date = datetime.datetime.utcnow()
-    msg = (("efemerydy %s dla QTH lokatora %s przy zadanym minimalnym kącie elewacji w zenicie wynoszącym %d°. \r\n" +
+    msg = (("efemerydy %s dla QTH lokatora %s przy zadanym minimalnym kącie elewacji w zenicie wynoszącym %d°. Czas UTC.\r\n" +
             "Format danych:  wschód { zenit } zachód     Legenda:  az. - azymut, el. - kąt elewacji, odl. - minimalna odległość\r\n") %
             (satellite.name, QTH_locator, min_elev_angle_zenith))
     for k in range(how_many_results):
