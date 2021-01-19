@@ -37,20 +37,13 @@ def logprepare():
 
 
 def downloadTLE():
-      url = "http://www.celestrak.com/NORAD/elements/stations.txt"
+      url = "http://www.amsat.org/amsat/ftp/keps/current/nasabare.txt"
       r = requests.get(url)
       if r.status_code == 200:
           tle = r.text
           with open("tle.txt", 'w') as tle_file:
               tle_file.write(tle)
           tle_file.close()
-          url = "http://www.celestrak.com/NORAD/elements/noaa.txt"
-          r = requests.get(url)
-          if r.status_code == 200:
-              tle = r.text
-              with open("tle.txt", 'a') as tle_file:
-                  tle_file.write(tle)
-              tle_file.close()
 
 logger = logprepare()
 downloadTLE()
