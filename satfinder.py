@@ -175,6 +175,7 @@ def main():
             print(datetime.datetime.utcnow().strftime("%y-%m-%d %H:%M:%S "), repr(ircmsg), "\n")
         if ircmsg.find("PING :") != -1:
             pong()
+            continue
         if ircmsg.find("PRIVMSG") != -1:
             name = ircmsg.split('!', 1)[0][1:]
             schan = ircmsg.split('PRIVMSG', 1)[1].split(':', 1)[0].strip()
