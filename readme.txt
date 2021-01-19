@@ -1,6 +1,6 @@
 utwórz środowisko virtualne python3 (venv) i aktwuj je.
 skopiuj pliki *.py projektu
-zainstaluj brakujące moduły python przy użyciu pip3
+zainstaluj brakujące moduły python (ephem, maidenhead, requests) przy użyciu pip3
 dodaj TLEdownloader.py do crontab (przykładowe użycie w pliku crontab), pamiętaj o zmodyfikowaniu ścieżek by wskazywały na Twoje virtualne środowisko
 uruchom TLEdownloder.py po raz pierwszy i upewnij się, że plik(i) TLE zostały pobrane (w tym celu sprawdź pliki cron_errorlog.txt oraz np. logi/satfinder.log)
 przykładowe wpisy w logach świadczą o poprawnym pobraniu plików TLE:
