@@ -54,7 +54,7 @@ def connect(server, channel, botnick, password):
 
 
 def pong():
-    ircsock.send(b"PONG :pingis\n")
+    ircsock.send(b"PONG\n")
     logger.debug("PONG")
 
 
